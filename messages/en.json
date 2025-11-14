@@ -1,0 +1,331 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "aboutSubmenu": {
+      "history": "History",
+      "art": "Art & Architecture",
+      "franciscans": "Franciscans"
+    },
+    "massAndPrayer": "Mass & Prayer",
+    "massAndPrayerSubmenu": {
+      "massTimes": "Mass Times",
+      "prayers": "Prayers",
+      "calendar": "Liturgical Calendar"
+    },
+    "communities": "Communities",
+    "bible": "Holy Bible",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "footer": {
+    "churchName": "St. Anthony of Padua Basilica",
+    "description": "Istanbul's largest Catholic church. Serving our community on İstiklal Street since 1912.",
+    "quickAccess": "Quick Access",
+    "massTimes": "Mass Times",
+    "prayers": "Prayers",
+    "communities": "Communities",
+    "calendar": "Calendar",
+    "gallery": "Gallery",
+    "community": "Community",
+    "discover": "Discover",
+    "history": "Our History",
+    "art": "Art & Architecture",
+    "bible": "Holy Bible",
+    "contact": "Contact",
+    "addressLine1": "İstiklal Street No: 171",
+    "addressLine2": "Beyoğlu, Istanbul",
+    "allRightsReserved": "All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "St. Anthony of Padua Basilica",
+      "subtitle": "Istanbul's Catholic Church",
+      "description": "Serving the community on İstiklal Street since 1912.",
+      "massTimesBtn": "Mass Times",
+      "aboutBtn": "About Our Church",
+      "joinTitle": "Join Us This Sunday",
+      "joinTimes": "Mass Times: 9:00 AM, 10:30 AM & 12:00 PM"
+    },
+    "welcome": {
+      "title": "Welcome",
+      "description": "St. Anthony of Padua Basilica is a Catholic church located on İstiklal Street in Beyoğlu, Istanbul, and belongs to the Franciscan order."
+    },
+    "cards": {
+      "history": {
+        "title": "Our History",
+        "description": "A deep-rooted legacy serving at the heart of Istanbul since 1230",
+        "readMore": "Explore"
+      },
+      "art": {
+        "title": "Art & Architecture",
+        "description": "The pearl of Istanbul with its Neo-Gothic architecture and magnificent artworks",
+        "readMore": "Explore"
+      },
+      "community": {
+        "title": "Our Communities",
+        "description": "Building a stronger community together with our various congregations",
+        "readMore": "Explore"
+      }
+    },
+    "massTimes": {
+      "title": "Mass Times",
+      "weekdays": {
+        "title": "Weekdays",
+        "schedule1": "Monday - Saturday: 8:00 AM",
+        "schedule2": "Italian Mass: 6:00 PM (Tuesday)",
+        "schedule3": "Turkish Mass: 6:00 PM (Wednesday)"
+      },
+      "weekend": {
+        "title": "Weekend",
+        "schedule1": "Sunday: 9:00 AM (Italian)",
+        "schedule2": "Sunday: 10:30 AM (Turkish)",
+        "schedule3": "Sunday: 12:00 PM (English)"
+      },
+      "viewAll": "View All Mass Times"
+    },
+    "prayers": {
+      "title": "Prayers",
+      "description": "Daily prayers, special prayers and seasonal prayers",
+      "special": {
+        "title": "Special Prayers",
+        "description": "Prayer to St. Anthony, Sacred Heart Prayer and other special prayers"
+      },
+      "seasonal": {
+        "title": "Seasonal Prayers",
+        "description": "Prayers for Advent, Christmas, Easter and other special seasons"
+      }
+    },
+    "visit": {
+      "title": "Visit Us",
+      "address": "İstiklal Street No: 171, Beyoğlu, Istanbul",
+      "contactBtn": "Contact Information",
+      "galleryBtn": "Photo Gallery"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in touch with us, we're happy to help",
+    "reachUs": "Reach Us",
+    "description": "Contact us for your questions, suggestions or support requests"
+  },
+  "bible": {
+    "title": "Holy Bible",
+    "subtitle": "Access the Holy Scriptures with online reading and download options",
+    "library": "Our Digital Library",
+    "libraryDescription": "Read the holy texts online or download them to your device"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "The visual story of St. Anthony of Padua Basilica",
+    "totalPhotos": "Total Photos",
+    "categories": "Categories",
+    "since": "Since",
+    "architecture": "Our Magnificent Architecture",
+    "architectureDescription": "Moments from our church's magnificent architecture, artworks and community life",
+    "collection": "Photo Collection",
+    "historical": "Historical Photos",
+    "historicalDescription": "Historical photos of our church built between 1906-1912, restoration works and the story of change from past to present",
+    "construction": "Construction Period (1906-1912)",
+    "constructionDescription": "Rare moments from the construction phase of the church",
+    "restoration": "Restoration Works",
+    "restorationDescription": "Maintenance and restoration carried out over the years",
+    "videos": "Video Gallery",
+    "videosDescription": "Virtual tour of our church, mass recordings and footage from special events",
+    "virtualTour": "Virtual Tour",
+    "virtualTourDescription": "360° virtual tour of our church",
+    "specialDays": "Special Days",
+    "specialDaysDescription": "Christmas, Easter and other celebrations",
+    "share": "Share Your Photos",
+    "shareButton": "Share Photo"
+  },
+  "communities": {
+    "title": "Our Communities",
+    "subtitle": "Communities that pray, serve and share our faith together at St. Anthony of Padua Basilica",
+    "total": "Total Communities",
+    "languages": "Languages",
+    "service": "Service",
+    "active": "Active",
+    "stronger": "Stronger Together",
+    "strongerDescription": "Our church hosts various community groups. Each community, with their different charisms and areas of service, acts together with the same faith and love. Join us!",
+    "learnMore": "Learn More",
+    "howToJoin": "How Can I Join?",
+    "howToJoinText1": "There are no prerequisites to join our communities. You can come to the church on the meeting days of the community you are interested in, get acquainted, ask your questions and join the group.",
+    "howToJoinText2": "Each community has its own meeting days and times. For detailed information, you can visit the relevant community page or contact our church office.",
+    "meetings": "Meetings and Events",
+    "meetingsText1": "Our communities regularly organize weekly prayer meetings, monthly formations, annual retreats and special events. Through these activities, we strengthen our spirituality, get to know each other and strengthen our community bonds.",
+    "meetingsText2": "You can check our church bulletin to follow our event calendar and stay informed about current announcements.",
+    "joinUs": "Join Us",
+    "joinUsDescription": "Contact us to learn more about our communities and discover which community is right for you.",
+    "contact": "Contact Us",
+    "massTimes": "Mass Times"
+  },
+  "history": {
+    "title": "Our History",
+    "subtitle": "Serving in Istanbul since 1230"
+  },
+  "art": {
+    "title": "Art & Architecture",
+    "subtitle": "The pearl of Istanbul with its Neo-Gothic architecture and magnificent artworks",
+    "architecturalStyle": "Architectural Style",
+    "architecturalStyleDesc": "St. Anthony of Padua Basilica is one of the most impressive Neo-Gothic structures of the early 20th century. Designed by Italian architect Giulio Mongeri, the church masterfully integrates the characteristic features of European Gothic architecture into the fabric of Ottoman Istanbul.",
+    "facade": "Facade",
+    "facadeDesc1": "The church's facade facing Istiklal Street attracts attention with its pointed arches, rose windows, and detailed stonework. The statue of the Virgin Mary above the main portal welcomes visitors.",
+    "facadeDesc2": "The bells located in the two side towers have been one of the sounds of Istiklal Street for a century.",
+    "interiorArt": "Interior Artworks",
+    "interiorArtDesc": "The church's interior brings together the works of Italian and local artists. The statue of St. Anthony at the altar was specially brought from Padua in 1912.",
+    "sculptures": "Sculptures",
+    "sculpturesDesc": "Each of the twelve apostle sculptures was crafted by a different artist, reflecting the synthesis of Neo-Classical and Neo-Gothic styles.",
+    "mosaics": "Mosaics",
+    "mosaicsDesc": "The mosaics in the apse dome and side chapels depict scenes from the life of Jesus:",
+    "baptismScene": "Baptism Scene",
+    "baptismSceneDesc": "Jesus' baptism in the Jordan River, rendered in gold and blue tones",
+    "lastSupper": "The Last Supper",
+    "lastSupperDesc": "Inspired by Leonardo da Vinci's famous work",
+    "paintingsFrescoes": "Paintings and Frescoes",
+    "paintingsFrescoesDesc": "On the side nave walls, there are scenes from the life of St. Francis and portraits of Catholic saints. These works were created by Italian artists in the 1920s.",
+    "lightSpace": "Light and Space",
+    "lightSpaceDesc": "Natural light entering through the high windows creates a changing atmosphere in the interior throughout the day. This play of light, a characteristic feature of Gothic architecture, offers a spiritual experience.",
+    "architecturalFeatures": "Architectural Features",
+    "latinCross": "Latin Cross Plan",
+    "latinCrossDesc": "The church has a classic Latin cross plan: a long nave, transept, and semicircular apse",
+    "concrete": "Reinforced Concrete Structure",
+    "concreteDesc": "Reinforced concrete, one of the most advanced construction techniques of the period, was used",
+    "redBrick": "Red Brick",
+    "redBrickDesc": "The red brick used on the facade and interior was specially imported from Marseille",
+    "tuscanStyle": "Tuscan Style",
+    "tuscanStyleDesc": "The column capitals and arches reflect the architectural tradition of the Italian Tuscany region",
+    "culturalSignificance": "Cultural Significance",
+    "culturalSignificanceDesc1": "St. Anthony of Padua Basilica is not just a place of worship, but also an important symbol of Istanbul's multicultural heritage. For centuries, it has hosted the city's Catholic community and also served as a meeting point for people of different faiths.",
+    "culturalSignificanceDesc2": "In addition to its architectural value, the church is a symbol of the cultural dialogue with Europe during Istanbul's modernization process. Celebrating its 100th anniversary in 2012, the church today hosts both religious and cultural events.",
+    "previousPage": "← Our History",
+    "nextPage": "Our Spiritual Values →"
+  },
+  "massTimes": {
+    "title": "Mass Times",
+    "subtitle": "Our weekly and special day mass schedule",
+    "weekdayMasses": "Weekday Masses",
+    "mondayToSaturday": "Monday to Saturday",
+    "morningMass": "Morning Mass",
+    "eveningMass": "Evening Mass",
+    "specialDays": "Special Days",
+    "tuesday": "Tuesday",
+    "tuesdayMass": "St. Anthony Devotion Mass (Italian)",
+    "wednesday": "Wednesday",
+    "wednesdayMass": "Turkish Mass",
+    "thursday": "Thursday",
+    "thursdayMass": "Holy Rosary",
+    "friday": "Friday",
+    "fridayMass": "Sacred Heart Mass",
+    "sundayMasses": "Sunday Masses",
+    "sunday": "Sunday",
+    "italianMass": "Italian Mass",
+    "turkishMass": "Turkish Mass",
+    "englishMass": "English Mass",
+    "italianEveningMass": "Italian Evening Mass",
+    "sundayNote": "Please arrive 15 minutes early for Sunday masses as they can be crowded.",
+    "importantInfo": "Important Information",
+    "address": "Address",
+    "addressText": "İstiklal Street No: 171, Beyoğlu, Istanbul",
+    "transportation": "Transportation",
+    "transportationText": "Accessible via Taksim Metro and nostalgic tram. 5 minutes walking distance from Taksim Square.",
+    "duration": "Mass Duration",
+    "durationText": "Approximately 60 minutes",
+    "dress": "Dress Code",
+    "dressText": "Respectful attire is requested",
+    "specialDaysTitle": "Special Days & Feasts",
+    "specialDaysDesc": "On special liturgical days and feasts, mass times may change.",
+    "specialDaysButton": "View Special Days"
+  },
+  "calendar": {
+    "title": "Liturgical Calendar 2025",
+    "subtitle": "Special days and feasts we celebrate throughout the year",
+    "description": "Explore the liturgical feasts, solemnities and memorials we will celebrate together in 2025",
+    "importanceLevels": "Importance Levels",
+    "solemnity": "Solemnity",
+    "solemnityDesc": "Highest importance celebrations",
+    "feast": "Feast",
+    "feastDesc": "Important celebrations",
+    "memorial": "Memorial",
+    "memorialDesc": "Saints' remembrance days",
+    "liturgicalSeasons": "Liturgical Seasons",
+    "advent": "Advent",
+    "start": "Start",
+    "adventDate": "December 1, 2024",
+    "adventDesc": "The season of preparation for the birth of Jesus",
+    "christmas": "Christmas Season",
+    "christmasDates": "December 25, 2024 - January 12, 2025",
+    "christmasDesc": "Celebrating the birth of Jesus Christ",
+    "lent": "Lent",
+    "lentDates": "March 5 - April 17, 2025",
+    "lentDesc": "40 days of prayer, fasting and preparation for Easter",
+    "easter": "Easter Season",
+    "easterDates": "April 20 - June 8, 2025",
+    "easterDesc": "Celebrating the resurrection of Jesus Christ",
+    "downloadTitle": "Download Calendar",
+    "downloadDesc": "Download the complete 2025 liturgical calendar to your device",
+    "downloadButton": "Download PDF"
+  },
+  "prayers": {
+    "title": "Prayers",
+    "subtitle": "Daily prayers, special prayers and seasonal prayers",
+    "specialPrayers": {
+      "title": "Special Prayers",
+      "description": "A collection of prayers to strengthen your spiritual life and deepen your relationship with God",
+      "stAnthony": {
+        "title": "Prayer to St. Anthony"
+      },
+      "sacredHeart": {
+        "title": "Sacred Heart Prayer"
+      },
+      "aveMaria": {
+        "title": "Hail Mary"
+      },
+      "signOfCross": {
+        "title": "Sign of the Cross"
+      },
+      "thanksgiving": {
+        "title": "Thanksgiving Prayer"
+      },
+      "guardianAngel": {
+        "title": "Guardian Angel Prayer"
+      },
+      "cta": {
+        "title": "Seasonal Prayers",
+        "description": "Discover prayers for special liturgical seasons",
+        "button": "View Seasonal Prayers"
+      }
+    }
+  },
+  "franciscans": {
+    "title": "The Franciscans",
+    "subtitle": "800 years of service following St. Francis",
+    "intro": "The Franciscan Order, which administers St. Anthony of Padua Basilica, is a Catholic religious order founded by St. Francis in 1209, with approximately 12,000 friars worldwide today.",
+    "whoAreTitle": "Who Are the Franciscans?",
+    "whoAreDesc1": "The Franciscans are a Catholic religious community based on the teachings of St. Francis of Assisi, Italy (1181-1226). Coming from a wealthy merchant family, St. Francis renounced material possessions at a young age and devoted his life to living among the poor and preaching the Gospel in a simple way.",
+    "whoAreDesc2": "Francis's charism was to see God's presence in creation, love the poor, work for peace, and view all creation with fraternal eyes. This spiritual perspective forms the foundation of the Franciscan Order.",
+    "pillarsTitle": "Core Principles of Franciscan Spirituality",
+    "pillar1Title": "Poverty and Simplicity",
+    "pillar1Desc": "St. Francis called poverty 'Our Lady.' Franciscans follow Jesus's path by avoiding material possessions and living a simple life.",
+    "pillar2Title": "Peace and Reconciliation",
+    "pillar2Desc": "The greeting of peace is the distinctive mark of Franciscans. They spread love, tolerance, and reconciliation everywhere.",
+    "pillar3Title": "Respect for Creation",
+    "pillar3Desc": "In the 'Canticle of the Sun,' St. Francis addresses all creation as brothers and sisters. Environmental awareness and respect for nature are at the heart of the Franciscan spirit.",
+    "pillar4Title": "Spreading the Gospel",
+    "pillar4Desc": "Franciscans are dedicated to spreading the Gospel by living it and preaching it in words.",
+    "istanbulTitle": "Franciscans in Istanbul",
+    "istanbulDesc1": "The Franciscans have been serving continuously in Istanbul since 1230. They first settled in Galata, then in Beyoğlu in 1724.",
+    "istanbulDesc2": "Today, the Franciscan friars serving at St. Anthony of Padua Basilica not only provide liturgical services but also offer social assistance, education, and spiritual guidance.",
+    "servicesTitle": "Services and Activities",
+    "service1": "Daily masses and sacraments",
+    "service2": "Confession and spiritual counseling",
+    "service3": "Baptism, marriage, funeral services",
+    "service4": "Youth and family programs",
+    "service5": "Assistance to the poor and social service",
+    "service6": "Intercultural dialogue and ecumenical work",
+    "communityTitle": "The Franciscan Family",
+    "communityDesc": "The Franciscan community at St. Anthony of Padua Basilica is not composed only of friars. Secular Franciscans (SFO - Secular Franciscan Order) and various community groups sharing the Franciscan spirit are also part of the larger family.",
+    "stFrancisTitle": "St. Francis of Assisi (1181-1226)",
+    "stFrancisDesc": "Giovanni di Pietro Bernardone of Assisi radically changed his life after a profound spiritual experience during war captivity. Rejecting his family's wealth, he lived the Gospel among the poor. In 1209, he founded his order with the approval of Pope Innocent III. He received the stigmata in 1224 and died in Assisi in 1226. He was canonized by Pope Gregory IX in 1228."
+  }
+}

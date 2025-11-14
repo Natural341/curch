@@ -1,0 +1,247 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "aboutSubmenu": {
+      "history": "Tarih",
+      "art": "Sanat ve Mimari",
+      "franciscans": "Fransiskenler"
+    },
+    "massAndPrayer": "Ayin ve Dua",
+    "massAndPrayerSubmenu": {
+      "massTimes": "Ayin Saatleri",
+      "prayers": "Dualar",
+      "calendar": "Litürjik Takvim"
+    },
+    "communities": "Cemaatler",
+    "bible": "Kutsal Kitap",
+    "gallery": "Galeri",
+    "contact": "İletişim"
+  },
+  "footer": {
+    "churchName": "Sent Antuan Bazilikası",
+    "description": "İstanbul'un en büyük Katolik kilisesi. 1912 yılından beri İstiklal Caddesi'nde cemaatimize hizmet vermektedir.",
+    "quickAccess": "Hızlı Erişim",
+    "massTimes": "Ayin Saatleri",
+    "prayers": "Dualar",
+    "communities": "Cemaatler",
+    "calendar": "Takvim",
+    "gallery": "Galeri",
+    "community": "Cemaat",
+    "discover": "Keşfet",
+    "history": "Tarihimiz",
+    "art": "Sanat & Mimari",
+    "bible": "Kutsal Kitap",
+    "contact": "İletişim",
+    "addressLine1": "İstiklal Caddesi No: 171",
+    "addressLine2": "Beyoğlu, İstanbul",
+    "allRightsReserved": "Tüm hakları saklıdır."
+  },
+  "home": {
+    "hero": {
+      "title": "Sent Antuan Bazilikası",
+      "subtitle": "İstanbul'un Katolik Kilisesi",
+      "description": "1912'den beri İstiklal Caddesi'nde hizmetinizdeyiz.",
+      "massTimesBtn": "Ayin Saatleri",
+      "aboutBtn": "Kilisemiz Hakkında",
+      "joinTitle": "Ayinlerimize Katılın",
+      "joinTimes": "Pazar Ayinleri: 09:00, 10:30 & 12:00"
+    },
+    "welcome": {
+      "title": "Hoş Geldiniz",
+      "description": "Sent Antuan Bazilikası, İstanbul Beyoğlu'nda İstiklal Caddesi üzerinde yer alan, Katolik kilisesidir ve Fransisken düzenine aittir."
+    },
+    "cards": {
+      "history": {
+        "title": "Tarihimiz",
+        "description": "1230 yılından bu yana İstanbul'un kalbinde hizmet veren köklü bir miras",
+        "readMore": "Keşfet"
+      },
+      "art": {
+        "title": "Sanat ve Mimari",
+        "description": "Neo-Gotik mimarisi ve muhteşem sanat eserleriyle İstanbul'un incisi",
+        "readMore": "Keşfet"
+      },
+      "community": {
+        "title": "Cemaatlerimiz",
+        "description": "Çeşitli cemaatlerimizle birlikte daha güçlü bir topluluk oluşturuyoruz",
+        "readMore": "Keşfet"
+      }
+    },
+    "massTimes": {
+      "title": "Ayin Saatleri",
+      "weekdays": {
+        "title": "Hafta İçi",
+        "schedule1": "Pazartesi - Cumartesi: 08:00",
+        "schedule2": "İtalyanca Ayin: 18:00 (Salı)",
+        "schedule3": "Türkçe Ayin: 18:00 (Çarşamba)"
+      },
+      "weekend": {
+        "title": "Hafta Sonu",
+        "schedule1": "Pazar: 09:00 (İtalyanca)",
+        "schedule2": "Pazar: 10:30 (Türkçe)",
+        "schedule3": "Pazar: 12:00 (İngilizce)"
+      },
+      "viewAll": "Tüm Ayin Saatleri"
+    },
+    "prayers": {
+      "title": "Dualar",
+      "description": "Günlük dualarınız, özel dualar ve dönemlere göre dualar",
+      "special": {
+        "title": "Özel Dualar",
+        "description": "Aziz Antuan'a Dua, Kutsal Kalp Duası ve diğer özel dualarımız"
+      },
+      "seasonal": {
+        "title": "Dönemlere Göre Dualar",
+        "description": "Advent, Noel, Paskalya ve diğer özel dönemlere ait dualar"
+      }
+    },
+    "visit": {
+      "title": "Bizi Ziyaret Edin",
+      "address": "İstiklal Caddesi No: 171, Beyoğlu, İstanbul",
+      "contactBtn": "İletişim Bilgileri",
+      "galleryBtn": "Fotoğraf Galerisi"
+    }
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Bizimle iletişime geçin, size yardımcı olmaktan mutluluk duyarız",
+    "reachUs": "Bize Ulaşın",
+    "description": "Sorularınız, önerileriniz veya destek talepleriniz için bizimle iletişime geçebilirsiniz"
+  },
+  "bible": {
+    "title": "Kutsal Kitap",
+    "subtitle": "Online okuma ve indirme imkanı ile Kutsal Metinlere ulaşın",
+    "library": "Dijital Kütüphanemiz",
+    "libraryDescription": "Kutsal metinleri online okuyabilir veya cihazınıza indirebilirsiniz"
+  },
+  "gallery": {
+    "title": "Fotoğraf Galerisi",
+    "subtitle": "Sent Antuan Bazilikası'nın görsel hikayesi",
+    "totalPhotos": "Toplam Fotoğraf",
+    "categories": "Kategori",
+    "since": "Tarihten Beri",
+    "architecture": "Kilisemizin Muhteşem Mimarisi",
+    "architectureDescription": "Kilisemizin muhteşem mimarisi, sanat eserleri ve cemaat yaşamından anlar",
+    "collection": "Fotoğraf Koleksiyonu",
+    "historical": "Tarihsel Fotoğraflar",
+    "historicalDescription": "1906-1912 yılları arasında inşa edilen kilisemizin tarihi fotoğrafları, restorasyon çalışmaları ve geçmişten günümüze değişim hikayesi",
+    "construction": "İnşaat Dönemi (1906-1912)",
+    "constructionDescription": "Kilisenin inşaat aşamasından nadide kareler",
+    "restoration": "Restorasyon Çalışmaları",
+    "restorationDescription": "Yıllar içinde yapılan bakım ve restorasyon",
+    "videos": "Video Galeri",
+    "videosDescription": "Kilisemizin sanal turu, ayin kayıtları ve özel etkinliklerden görüntüler",
+    "virtualTour": "Sanal Tur",
+    "virtualTourDescription": "Kilisemizin 360° sanal turu",
+    "specialDays": "Özel Günler",
+    "specialDaysDescription": "Noel, Paskalya ve diğer kutlamalar",
+    "share": "Fotoğraflarınızı Paylaşın",
+    "shareButton": "Fotoğraf Paylaş"
+  },
+  "communities": {
+    "title": "Cemaatlerimiz",
+    "subtitle": "Sent Antuan Bazilikası'nda birlikte dua eden, hizmet eden ve inancımızı paylaşan cemaatlerimiz",
+    "total": "Toplam Cemaat",
+    "languages": "Dil",
+    "service": "Hizmet",
+    "active": "Aktif",
+    "stronger": "Birlikte Daha Güçlüyüz",
+    "strongerDescription": "Kilisemiz, çeşitli cemaat gruplarına ev sahipliği yapmaktadır. Her cemaat, farklı karizmaları ve hizmet alanlarıyla birlikte, aynı iman ve sevgiyle hareket eder. Siz de aramıza katılın!",
+    "learnMore": "Daha Fazla",
+    "howToJoin": "Nasıl Katılabilirim?",
+    "howToJoinText1": "Cemaatlerimize katılmak için herhangi bir ön şart yoktur. İlgilendiğiniz cemaatin toplantı günlerinde kiliseye gelerek tanışabilir, sorularınızı sorabilir ve gruba katılabilirsiniz.",
+    "howToJoinText2": "Her cemaat, kendi toplantı günleri ve saatlerine sahiptir. Detaylı bilgi için ilgili cemaat sayfasını ziyaret edebilir veya kilise ofisimizle iletişime geçebilirsiniz.",
+    "meetings": "Toplantı ve Etkinlikler",
+    "meetingsText1": "Cemaatlerimiz düzenli olarak haftalık dua toplantıları, aylık formasyonlar, yıllık rekoleksiyonlar ve özel etkinlikler düzenler. Bu etkinlikler sayesinde maneviyatımızı güçlendirir, birbirimizi tanır ve cemaat bağlarımızı sağlamlaştırırız.",
+    "meetingsText2": "Etkinlik takvimimizi takip etmek ve güncel duyurulardan haberdar olmak için kilise bültenimizi kontrol edebilirsiniz.",
+    "joinUs": "Siz de Aramıza Katılın",
+    "joinUsDescription": "Cemaatlerimiz hakkında daha fazla bilgi almak ve hangi cemaatin size uygun olduğunu keşfetmek için bizimle iletişime geçin.",
+    "contact": "İletişime Geçin",
+    "massTimes": "Ayin Saatleri"
+  },
+  "history": {
+    "title": "Tarihimiz",
+    "subtitle": "1230 yılından bu yana İstanbul'da hizmet"
+  },
+  "art": {
+    "title": "Sanat ve Mimari",
+    "subtitle": "Neo-Gotik mimarisi ve muhteşem sanat eserleriyle İstanbul'un incisi",
+    "architecturalStyle": "Mimari Tarz",
+    "architecturalStyleDesc": "Sent Antuan Bazilikası, 20. yüzyıl başlarının en etkileyici Neo-Gotik yapılarından biridir. İtalyan mimar Giulio Mongeri tarafından tasarlanan kilise, Avrupa Gotik mimarisinin karakteristik özelliklerini Osmanlı İstanbul'unun dokusuna ustaca entegre eder.",
+    "facade": "Cephe",
+    "facadeDesc1": "Kilisenin İstiklal Caddesi'ne bakan cephesi, sivri kemerler, rozetler ve detaylı taş işçiliğiyle dikkat çeker. Ana portal üzerindeki Meryem Ana heykeli, ziyaretçileri selamlar.",
+    "facadeDesc2": "İki yan kulede yer alan çanlar, yüzyıldır İstiklal Caddesi'nin seslerinden biri olmuştur.",
+    "interiorArt": "İç Mekan Sanat Eserleri",
+    "interiorArtDesc": "Kilisenin iç mekanı, İtalyan ve yerel sanatçıların eserlerini bir araya getirir. Mihrapta yer alan Aziz Antuan heykeli, 1912 yılında Padua'dan özel olarak getirilmiştir.",
+    "sculptures": "Heykeller",
+    "sculpturesDesc": "On iki havari heykellerinin her biri, farklı bir sanatçı tarafından işlenmiş olup, Neo-Klasik ve Neo-Gotik tarzların sentezini yansıtır.",
+    "mosaics": "Mozaikler",
+    "mosaicsDesc": "Apsis kubbesi ve yan şapellerdeki mozaikler, İsa'nın yaşamından sahneleri tasvir eder:",
+    "baptismScene": "Vaftiz Sahnesi",
+    "baptismSceneDesc": "Ürdün Nehri'nde İsa'nın vaftizi, altın ve mavi tonlarla işlenmiştir",
+    "lastSupper": "Son Akşam Yemeği",
+    "lastSupperDesc": "Leonardo da Vinci'nin ünlü eserinden esinlenilmiştir",
+    "paintingsFrescoes": "Resimler ve Freskler",
+    "paintingsFrescoesDesc": "Yan nef duvarlarında, Aziz Fransua'nın hayatından sahneler ve Katolik azizlerinin portreleri yer alır. Bu eserler, 1920'lerde İtalyan sanatçılar tarafından yapılmıştır.",
+    "lightSpace": "Işık ve Mekan",
+    "lightSpaceDesc": "Yüksek pencerelerden giren doğal ışık, gün boyunca iç mekanda değişen bir atmosfer yaratır. Gotik mimarinin karakteristik özelliği olan bu ışık oyunu, manevi bir deneyim sunar.",
+    "architecturalFeatures": "Mimari Özellikler",
+    "latinCross": "Latin Haç Planı",
+    "latinCrossDesc": "Kilise klasik Latin haç planına sahiptir: uzun bir nef, transept ve yarım dairesel apsis",
+    "concrete": "Betonarme Yapı",
+    "concreteDesc": "Dönemin en gelişmiş inşaat tekniklerinden biri olan betonarme kullanılmıştır",
+    "redBrick": "Kırmızı Tuğla",
+    "redBrickDesc": "Cephe ve iç mekanda kullanılan kırmızı tuğla, Marsilya'dan özel olarak getirilmiştir",
+    "tuscanStyle": "Toskana Tarzı",
+    "tuscanStyleDesc": "Sütun başlıkları ve kemerler, İtalyan Toskana bölgesinin mimari geleneğini yansıtır",
+    "culturalSignificance": "Kültürel Önem",
+    "culturalSignificanceDesc1": "Sent Antuan Bazilikası, sadece bir ibadet yeri değil, aynı zamanda İstanbul'un çok kültürlü mirasının önemli bir simgesidir. Yüzyıldır şehrin Katolik cemaatine ev sahipliği yapmış, aynı zamanda farklı inançlardan insanların buluşma noktası olmuştur.",
+    "culturalSignificanceDesc2": "Kilise, mimari değerinin yanı sıra, İstanbul'un modernleşme sürecinde Avrupa ile olan kültürel diyalogun da bir sembolüdür. 2012 yılında 100. yılını kutlayan kilise, bugün hem dini hem de kültürel etkinliklere ev sahipliği yapmaktadır.",
+    "previousPage": "← Tarihimiz",
+    "nextPage": "Ruhsal Değerlerimiz →"
+  },
+  "massTimes": {
+    "title": "Ayin Saatleri",
+    "subtitle": "Haftalık ve özel günlerdeki ayin programımız"
+  },
+  "calendar": {
+    "title": "Litürjik Takvim 2025",
+    "subtitle": "Yıl boyunca kutladığımız özel günler ve bayramlar"
+  },
+  "prayers": {
+    "title": "Dualar",
+    "subtitle": "Günlük dualarınız, özel dualar ve dönemlere göre dualar"
+  },
+  "franciscans": {
+    "title": "Fransiskenler",
+    "subtitle": "Aziz Fransua'nın izinde 800 yıllık hizmet",
+    "intro": "Sent Antuan Bazilikası'nı yöneten Fransisken tarikatı, 1209 yılında Aziz Fransua tarafından kurulan ve bugün dünya çapında yaklaşık 12.000 rahibi olan bir Katolik düzenidir.",
+    "whoAreTitle": "Fransiskenler Kimdir?",
+    "whoAreDesc1": "Fransiskenler, İtalya'nın Assisi kentinden Aziz Fransua'nın (1181-1226) öğretilerine dayanan bir Katolik ruhban topluluğudur. Aziz Fransua, zengin bir tüccar aileden gelirken, genç yaşta maddi şeyleri terk ederek yoksullar arasında yaşamaya ve İncil'in basit bir şekilde vaaz edilmesine adanmış bir yaşam sürmüştür.",
+    "whoAreDesc2": "Fransua'nın karizması, Tanrı'nın yaratılıştaki varlığını görmek, yoksulları sevmek, barış için çalışmak ve tüm yaratılışa kardeşlik gözüyle bakmaktı. Bu manevi bakış açısı, Fransisken düzeninin temelini oluşturur.",
+    "pillarsTitle": "Fransisken Maneviyatının Temel İlkeleri",
+    "pillar1Title": "Yoksulluk ve Sadelik",
+    "pillar1Desc": "Aziz Fransua 'Efendimiz Yoksulluk' diyordu. Fransiskenler, maddi şeylerden uzak durarak İsa'nın yolunu izlerler ve basit bir yaşam sürerler.",
+    "pillar2Title": "Barış ve Uzlaşma",
+    "pillar2Desc": "Barış selamı Fransiskenlerin ayırt edici özelliğidir. Her yerde sevgiyi, hoşgörüyü ve uzlaşmayı yayarlar.",
+    "pillar3Title": "Yaratılışa Saygı",
+    "pillar3Desc": "'Güneş İlahisi'nde Aziz Fransua tüm yaratılışı kardeş olarak adlandırır. Çevre bilinci ve doğaya saygı, Fransisken ruhunun özüdür.",
+    "pillar4Title": "Müjdeyi Yaymak",
+    "pillar4Desc": "Fransiskenler, İncil'i yaşayarak ve sözcüklerle vaaz ederek Müjde'yi yaymaya adanmışlardır.",
+    "istanbulTitle": "İstanbul'daki Fransiskenler",
+    "istanbulDesc1": "Fransiskenler, 1230 yılından beri İstanbul'da kesintisiz olarak hizmet vermektedir. İlk olarak Galata'da, ardından 1724'te Beyoğlu'nda yerleşmişlerdir.",
+    "istanbulDesc2": "Bugün Sent Antuan Bazilikası'nda hizmet veren Fransisken rahipler, sadece liturgik hizmet vermekle kalmaz, aynı zamanda sosyal yardım, eğitim ve manevi rehberlik de sunarlar.",
+    "servicesTitle": "Hizmetler ve Faaliyetler",
+    "service1": "Günlük ayinler ve sakramentler",
+    "service2": "İtiraf ve ruhsal danışmanlık",
+    "service3": "Vaftiz, evlilik, cenaze hizmetleri",
+    "service4": "Gençlik ve aile programları",
+    "service5": "Yoksullara yardım ve sosyal hizmet",
+    "service6": "Kültürlerarası diyalog ve ekümenik çalışmalar",
+    "communityTitle": "Fransisken Ailesi",
+    "communityDesc": "Sent Antuan Bazilikası'ndaki Fransisken cemaati, sadece rahiplerden oluşmaz. Laik Fransiskenler (SFO - Seküler Fransisken Tarikatı) ve Fransisken ruhunu paylaşan çeşitli cemaat grupları da büyük ailenin bir parçasıdır.",
+    "stFrancisTitle": "Aziz Fransua (1181-1226)",
+    "stFrancisDesc": "Assisi'li Giovanni di Pietro Bernardone, savaş esareti sırasında yaşadığı derin manevi deneyimden sonra yaşamını radikal bir şekilde değiştirdi. Ailesinin zenginliğini reddederek, yoksulların arasında İncil'i yaşadı. 1209'da Papa III. Innocent onayıyla tarikatını kurdu. 1224'te kutsal yara damgalarını (stigmata) aldı ve 1226'da Assisi'de öldü. 1228'de Papa IX. Gregory tarafından aziz ilan edildi."
+  }
+}
