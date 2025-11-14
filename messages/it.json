@@ -1,0 +1,276 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "aboutSubmenu": {
+      "history": "Storia",
+      "art": "Arte e Architettura",
+      "franciscans": "Francescani"
+    },
+    "massAndPrayer": "Messa e Preghiera",
+    "massAndPrayerSubmenu": {
+      "massTimes": "Orari delle Messe",
+      "prayers": "Preghiere",
+      "calendar": "Calendario Liturgico"
+    },
+    "communities": "Comunità",
+    "bible": "Sacra Bibbia",
+    "gallery": "Galleria",
+    "contact": "Contatti"
+  },
+  "footer": {
+    "churchName": "Basilica di Sant'Antonio di Padova",
+    "description": "La più grande chiesa cattolica di Istanbul. Al servizio della nostra comunità su İstiklal Caddesi dal 1912.",
+    "quickAccess": "Accesso Rapido",
+    "massTimes": "Orari delle Messe",
+    "prayers": "Preghiere",
+    "communities": "Comunità",
+    "calendar": "Calendario",
+    "gallery": "Galleria",
+    "community": "Comunità",
+    "discover": "Scopri",
+    "history": "La Nostra Storia",
+    "art": "Arte e Architettura",
+    "bible": "Sacra Bibbia",
+    "contact": "Contatti",
+    "addressLine1": "İstiklal Caddesi N. 171",
+    "addressLine2": "Beyoğlu, Istanbul",
+    "allRightsReserved": "Tutti i diritti riservati."
+  },
+  "home": {
+    "hero": {
+      "title": "Basilica di Sant'Antonio di Padova",
+      "subtitle": "Chiesa Cattolica di Istanbul",
+      "description": "Al servizio della comunità su İstiklal Caddesi dal 1912.",
+      "massTimesBtn": "Orari delle Messe",
+      "aboutBtn": "La Nostra Chiesa",
+      "joinTitle": "Unisciti a Noi Questa Domenica",
+      "joinTimes": "Orari delle Messe: 9:00, 10:30 e 12:00"
+    },
+    "welcome": {
+      "title": "Benvenuti",
+      "description": "La Basilica di Sant'Antonio di Padova è il cuore spirituale della comunità cattolica di Istanbul da oltre un secolo.",
+      "learn": "Scopri di Più"
+    },
+    "cards": {
+      "history": {
+        "title": "La Nostra Storia",
+        "description": "Un patrimonio radicato che serve nel cuore di Istanbul dal 1230",
+        "readMore": "Scopri"
+      },
+      "art": {
+        "title": "Arte e Architettura",
+        "description": "La gemma di Istanbul con architettura neogotica e magnifiche opere d'arte",
+        "readMore": "Scopri"
+      },
+      "community": {
+        "title": "Le Nostre Comunità",
+        "description": "Costruiamo una comunità più forte insieme alle nostre diverse comunità",
+        "readMore": "Scopri"
+      }
+    },
+    "massTimes": {
+      "title": "Orari delle Messe",
+      "description": "Unisciti a noi per le celebrazioni settimanali",
+      "weekday": "Giorni Feriali",
+      "weekdayTimes": "8:00 e 18:00",
+      "sunday": "Domenica",
+      "sundayTimes": "9:00 Italiano • 10:30 Turco • 12:00 Inglese • 18:00 Italiano",
+      "viewFull": "Programma Completo",
+      "weekdays": {
+        "title": "Giorni Feriali",
+        "schedule1": "Lunedì - Sabato: 08:00",
+        "schedule2": "Messa in Italiano: 18:00 (Martedì)",
+        "schedule3": "Messa in Turco: 18:00 (Mercoledì)"
+      },
+      "weekend": {
+        "title": "Fine Settimana",
+        "schedule1": "Domenica: 09:00 (Italiano)",
+        "schedule2": "Domenica: 10:30 (Turco)",
+        "schedule3": "Domenica: 12:00 (Inglese)"
+      },
+      "viewAll": "Tutti gli Orari delle Messe"
+    },
+    "prayers": {
+      "title": "Preghiere",
+      "description": "Preghiere quotidiane, speciali e stagionali",
+      "special": {
+        "title": "Preghiere Speciali",
+        "description": "Preghiera a Sant'Antonio, Preghiera al Sacro Cuore e altre preghiere speciali"
+      },
+      "seasonal": {
+        "title": "Preghiere Stagionali",
+        "description": "Preghiere per Avvento, Natale, Pasqua e altri periodi speciali"
+      }
+    },
+    "visit": {
+      "title": "Visitaci",
+      "address": "İstiklal Caddesi N. 171, Beyoğlu, Istanbul",
+      "contactBtn": "Informazioni di Contatto",
+      "galleryBtn": "Galleria Fotografica"
+    },
+    "visitUs": {
+      "title": "Visitaci",
+      "description": "Ti invitiamo a visitare la nostra storica basilica e sperimentare la sua bellezza e spiritualità",
+      "address": "Indirizzo",
+      "addressText": "İstiklal Caddesi N. 171, Beyoğlu",
+      "hours": "Orari",
+      "hoursText": "Aperto tutti i giorni 08:00 - 19:30",
+      "tour": "Visite Guidate",
+      "tourText": "Disponibili su richiesta"
+    }
+  },
+  "massTimes": {
+    "title": "Orari delle Messe",
+    "subtitle": "Programma settimanale e orari di apertura della chiesa",
+    "summerSchedule": "Periodo Estivo",
+    "winterSchedule": "Periodo Invernale",
+    "day": "Giorno",
+    "massTimesColumn": "Orari delle Messe",
+    "openingClosing": "Apertura - Chiusura",
+    "importantInfo": "Informazioni Importanti",
+    "address": "Indirizzo",
+    "addressText": "İstiklal Caddesi N. 171, Beyoğlu, Istanbul",
+    "transportation": "Trasporti",
+    "transportationText": "Metro Taksim - 5 minuti a piedi",
+    "duration": "Durata",
+    "durationText": "Circa 45-60 minuti",
+    "dress": "Abbigliamento",
+    "dressText": "Si richiede un abbigliamento rispettoso",
+    "specialDaysTitle": "Giorni Speciali",
+    "specialDaysDesc": "Natale, Pasqua e altri giorni liturgici speciali",
+    "specialDaysButton": "Calendario dei Giorni Speciali",
+    "weekdayMasses": "Messe Feriali",
+    "sundayMasses": "Messe Domenicali",
+    "mondayToSaturday": "Lunedì - Sabato",
+    "morningMass": "Messa del Mattino",
+    "eveningMass": "Messa della Sera",
+    "specialDays": "Giorni Speciali",
+    "tuesday": "Martedì",
+    "tuesdayMass": "Messa con canti e organo alle 11:30",
+    "wednesday": "Mercoledì",
+    "wednesdayMass": "Messa regolare",
+    "thursday": "Giovedì",
+    "thursdayMass": "Messa regolare",
+    "friday": "Venerdì",
+    "fridayMass": "Via Crucis alle 18:00",
+    "sunday": "Domenica",
+    "italianMass": "Messa in Italiano",
+    "turkishMass": "Messa in Turco",
+    "englishMass": "Messa in Inglese",
+    "italianEveningMass": "Messa Serale in Italiano",
+    "sundayNote": "Le messe domenicali sono celebrate in diverse lingue per servire la nostra comunità internazionale",
+    "importantInfo": "Informazioni Importanti",
+    "address": "Indirizzo",
+    "addressText": "İstiklal Caddesi N. 171, Beyoğlu, Istanbul",
+    "transportation": "Trasporti",
+    "transportationText": "Metro Taksim - 5 minuti a piedi",
+    "duration": "Durata",
+    "durationText": "Circa 45-60 minuti",
+    "dress": "Abbigliamento",
+    "dressText": "Si richiede un abbigliamento rispettoso",
+    "specialDaysTitle": "Giorni Speciali",
+    "specialDaysDesc": "Natale, Pasqua e altri giorni liturgici speciali",
+    "specialDaysButton": "Calendario dei Giorni Speciali"
+  },
+  "prayers": {
+    "specialPrayers": {
+      "title": "Preghiere Speciali",
+      "description": "Preghiere tradizionali e devozioni della nostra fede cattolica",
+      "stAnthony": {
+        "title": "Preghiera a Sant'Antonio"
+      },
+      "sacredHeart": {
+        "title": "Preghiera al Sacro Cuore"
+      },
+      "aveMaria": {
+        "title": "Ave Maria"
+      },
+      "signOfCross": {
+        "title": "Segno della Croce"
+      },
+      "thanksgiving": {
+        "title": "Preghiera di Ringraziamento"
+      },
+      "guardianAngel": {
+        "title": "Preghiera all'Angelo Custode"
+      },
+      "cta": {
+        "title": "Preghiere Stagionali",
+        "description": "Scopri le preghiere per i diversi periodi liturgici",
+        "button": "Preghiere per Periodo"
+      }
+    }
+  },
+  "communities": {
+    "title": "Le Nostre Comunità",
+    "subtitle": "Gruppi e movimenti attivi nella nostra parrocchia",
+    "total": "Comunità Totali",
+    "languages": "Lingue",
+    "service": "Servizio",
+    "active": "Attivo",
+    "stronger": "Più Forti Insieme",
+    "strongerDescription": "La nostra parrocchia ospita diverse comunità che servono i fedeli in modi unici e significativi.",
+    "learnMore": "Scopri di Più",
+    "howToJoin": "Come Unirsi",
+    "howToJoinText1": "Tutti sono benvenuti a unirsi alle nostre comunità. Contatta l'ufficio parrocchiale o partecipa a una riunione della comunità.",
+    "howToJoinText2": "Ogni comunità ha il proprio programma e attività. Visita le pagine individuali delle comunità per maggiori dettagli.",
+    "meetings": "Riunioni",
+    "meetingsText1": "Le comunità si riuniscono regolarmente per preghiera, formazione e servizio.",
+    "meetingsText2": "Controlla il calendario della chiesa per gli orari e i luoghi specifici delle riunioni.",
+    "joinUs": "Unisciti a Noi",
+    "joinUsDescription": "Diventa parte della nostra vibrante comunità parrocchiale",
+    "contact": "Contattaci",
+    "massTimes": "Orari delle Messe"
+  },
+  "gallery": {
+    "title": "Galleria",
+    "subtitle": "Esplora la bellezza della nostra storica basilica",
+    "totalPhotos": "Foto Totali",
+    "categories": "Categorie",
+    "since": "Dal",
+    "architecture": "Architettura e Arte",
+    "architectureDescription": "La Basilica di Sant'Antonio presenta una splendida architettura neogotica con interni riccamente decorati.",
+    "collection": "La Nostra Collezione",
+    "historical": "Foto Storiche",
+    "historicalDescription": "Guarda come la nostra basilica si è evoluta nel corso degli anni attraverso rare fotografie storiche.",
+    "construction": "Costruzione",
+    "constructionDescription": "Foto della costruzione originale della basilica all'inizio del 1900.",
+    "restoration": "Restauro",
+    "restorationDescription": "Lavori di restauro e conservazione nel corso degli anni.",
+    "videos": "Galleria Video",
+    "videosDescription": "Vivi la basilica attraverso tour virtuali e riprese di eventi speciali.",
+    "virtualTour": "Tour Virtuale",
+    "virtualTourDescription": "Esplora gli interni della basilica dal tuo dispositivo.",
+    "specialDays": "Celebrazioni Speciali",
+    "specialDaysDescription": "Guarda le celebrazioni di Natale, Pasqua e altri eventi speciali.",
+    "share": "Condividi le Tue Foto",
+    "shareButton": "Contattaci"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Siamo qui per servirti",
+    "getInTouch": "Contattaci",
+    "getInTouchDescription": "Hai domande o hai bisogno di assistenza? Non esitare a contattarci.",
+    "phone": "Telefono",
+    "email": "Email",
+    "address": "Indirizzo",
+    "followUs": "Seguici",
+    "sendMessage": "Invia un Messaggio",
+    "name": "Nome",
+    "emailAddress": "Indirizzo Email",
+    "message": "Messaggio",
+    "send": "Invia",
+    "office": "Ufficio Parrocchiale",
+    "officeHours": "Orari dell'Ufficio",
+    "officeHoursText": "Lunedì - Venerdì: 9:00 - 17:00",
+    "emergencies": "Emergenze",
+    "emergenciesText": "Per le emergenze pastorali, si prega di chiamare l'ufficio parrocchiale."
+  },
+  "bible": {
+    "title": "Sacra Bibbia",
+    "subtitle": "Accedi ai testi sacri con lettura online e possibilità di download",
+    "library": "La Nostra Biblioteca Digitale",
+    "libraryDescription": "Puoi leggere i testi sacri online o scaricarli sul tuo dispositivo"
+  }
+}

@@ -46,10 +46,10 @@ export default function CemaatimizPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[92vh] w-full overflow-hidden">
+      <section className="relative h-[50vh] md:h-[70vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/photos/hero.jpeg"
+            src="/photos/Sent-Antuan-Kilisesi-06.jpg"
             alt="Communities"
             fill
             className="object-cover object-center transition-transform duration-700 ease-out"
@@ -59,12 +59,12 @@ export default function CemaatimizPage() {
             unoptimized
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-2xl leading-tight tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-white drop-shadow-2xl leading-tight">
               {t('title')}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white mb-10 max-w-2xl leading-relaxed font-semibold tracking-wide">
+            <p className="text-sm sm:text-base md:text-lg text-white/90 mb-8 max-w-2xl leading-relaxed">
               {t('subtitle')}
             </p>
 
@@ -101,33 +101,33 @@ export default function CemaatimizPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Giriş */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">{t('stronger')}</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-900 mb-6 tracking-tight font-serif">{t('stronger')}</h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
             {t('strongerDescription')}
           </p>
         </div>
 
         {/* Cemaat Kartları */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
           {cemaatler.map((cemaat) => (
             <Link
               key={cemaat.name}
               href={cemaat.href}
               className="group"
             >
-              <div className="bg-white rounded-xl shadow-md p-8 h-full hover:shadow-xl transition-all duration-300 border border-gray-200">
-                <div className="w-12 h-12 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-900" fill="currentColor" viewBox="0 0 24 24">
+              <div className="bg-white rounded-lg shadow-sm p-6 h-full hover:shadow-md transition-all duration-300 border border-gray-200">
+                <div className="w-10 h-10 mb-4 bg-gray-100 rounded-lg flex items-center justify-center">
+                  <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
                     <path d={cemaat.iconPath} />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {cemaat.name}
                 </h3>
-                <p className="text-base font-medium text-gray-700 leading-relaxed mb-4">
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
                   {cemaat.description}
                 </p>
-                <div className="text-gray-900 font-bold">
+                <div className="text-gray-700 font-medium text-sm">
                   {t('learnMore')} →
                 </div>
               </div>
@@ -136,62 +136,65 @@ export default function CemaatimizPage() {
         </div>
 
         {/* Bilgi Bölümü */}
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          <div className="bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-            <div className="w-12 h-12 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
-              <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="grid md:grid-cols-2 gap-6 mb-20">
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition-all duration-300">
+            <div className="w-10 h-10 mb-4 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('howToJoin')}</h3>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('howToJoin')}</h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
               {t('howToJoinText1')}
             </p>
-            <p className="text-base font-medium text-gray-700 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
               {t('howToJoinText2')}
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md p-8 border border-gray-200 hover:shadow-xl transition-all duration-300">
-            <div className="w-12 h-12 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
-              <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-lg shadow-sm p-6 border border-gray-200 hover:shadow-md transition-all duration-300">
+            <div className="w-10 h-10 mb-4 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">{t('meetings')}</h3>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">{t('meetings')}</h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-3">
               {t('meetingsText1')}
             </p>
-            <p className="text-base font-medium text-gray-700 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
               {t('meetingsText2')}
             </p>
           </div>
         </div>
 
-        {/* Call to Action */}
-        <div className="bg-gradient-to-br from-gray-50 via-white to-gray-100 rounded-2xl shadow-xl p-12 md:p-16 text-center border border-gray-200">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900">
+      </div>
+
+      {/* Call to Action */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-gray-900 tracking-tight">
             {t('joinUs')}
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl mb-10 text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-600">
             {t('joinUsDescription')}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/iletisim"
-              className="bg-white hover:bg-transparent text-gray-900 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-gray-900"
+              className="bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-gray-800 shadow-md transition-all duration-300 hover:shadow-lg text-sm"
             >
               {t('contact')}
             </Link>
             <Link
               href="/ayin/saatleri"
-              className="bg-transparent hover:bg-white text-gray-900 font-bold py-4 px-10 rounded-lg transition-all duration-300 border-2 border-gray-900"
+              className="bg-white text-gray-700 font-medium py-3 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-50 shadow-md transition-all duration-300 text-sm"
             >
               {t('massTimes')}
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

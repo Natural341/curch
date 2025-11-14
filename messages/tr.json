@@ -203,7 +203,24 @@
   },
   "massTimes": {
     "title": "Ayin Saatleri",
-    "subtitle": "Haftalık ve özel günlerdeki ayin programımız"
+    "subtitle": "Haftalık ayin programımız ve kilisemizin açılış-kapanış saatleri",
+    "summerSchedule": "Yaz Dönemi",
+    "winterSchedule": "Kış Dönemi",
+    "day": "Gün",
+    "massTimesColumn": "Ayin Saatleri",
+    "openingClosing": "Açılış - Kapanış",
+    "importantInfo": "Önemli Bilgiler",
+    "address": "Adres",
+    "addressText": "İstiklal Caddesi No: 171, Beyoğlu, İstanbul",
+    "transportation": "Ulaşım",
+    "transportationText": "Taksim Metro - 5 dakika yürüme mesafesi",
+    "duration": "Ayin Süresi",
+    "durationText": "Yaklaşık 45-60 dakika",
+    "dress": "Kıyafet",
+    "dressText": "Saygılı kıyafet tercih edilmelidir",
+    "specialDaysTitle": "Özel Günler",
+    "specialDaysDesc": "Noel, Paskalya ve diğer özel günlerdeki ayin saatlerimiz için",
+    "specialDaysButton": "Özel Günler Takvimi"
   },
   "calendar": {
     "title": "Litürjik Takvim 2025",

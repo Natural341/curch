@@ -34,140 +34,140 @@ export default function SanatPage() {
       </section>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <article className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <article className="bg-white rounded-xl shadow-sm p-6 md:p-10">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6">
               {t('architecturalStyle')}
             </h2>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-8">
               {t('architecturalStyleDesc')}
             </p>
 
-            <div className="bg-gray-100 rounded-xl p-6 my-8 border border-gray-200 mb-20">
-              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-3">
+            <div className="bg-gray-50 rounded-lg p-5 my-8 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {t('facade')}
               </h3>
-              <p className="text-base font-medium text-gray-700 leading-relaxed mb-4">
+              <p className="text-sm text-gray-600 leading-relaxed mb-3">
                 {t('facadeDesc1')}
               </p>
-              <p className="text-base font-medium text-gray-700 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {t('facadeDesc2')}
               </p>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6 mt-12">
               {t('interiorArt')}
             </h2>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-8">
               {t('interiorArtDesc')}
             </p>
 
-            <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4 mt-10">
               {t('sculptures')}
             </h3>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-8">
               {t('sculpturesDesc')}
             </p>
 
-            <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4 mt-10">
               {t('mosaics')}
             </h3>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
               {t('mosaicsDesc')}
             </p>
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-2 mb-8">
               <li className="flex items-start">
-                <span className="text-gray-900 mr-3">•</span>
-                <span className="text-base font-medium text-gray-700">
-                  <strong>{t('baptismScene')}:</strong> {t('baptismSceneDesc')}
+                <span className="text-gray-400 mr-3">•</span>
+                <span className="text-sm text-gray-600">
+                  <strong className="text-gray-900">{t('baptismScene')}:</strong> {t('baptismSceneDesc')}
                 </span>
               </li>
               <li className="flex items-start">
-                <span className="text-gray-900 mr-3">•</span>
-                <span className="text-base font-medium text-gray-700">
-                  <strong>{t('lastSupper')}:</strong> {t('lastSupperDesc')}
+                <span className="text-gray-400 mr-3">•</span>
+                <span className="text-sm text-gray-600">
+                  <strong className="text-gray-900">{t('lastSupper')}:</strong> {t('lastSupperDesc')}
                 </span>
               </li>
             </ul>
 
-            <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4 mt-10">
               {t('paintingsFrescoes')}
             </h3>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-8">
               {t('paintingsFrescoesDesc')}
             </p>
 
-            <div className="bg-gray-100 rounded-xl p-6 my-8 border border-gray-200 mb-20">
-              <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-3">
+            <div className="bg-gray-50 rounded-lg p-5 my-8 border border-gray-200">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {t('lightSpace')}
               </h3>
-              <p className="text-base font-medium text-gray-700 leading-relaxed">
+              <p className="text-sm text-gray-600 leading-relaxed">
                 {t('lightSpaceDesc')}
               </p>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6 mt-12">
               {t('architecturalFeatures')}
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 my-8 mb-20">
-              <div className="bg-gray-100 rounded-lg p-6 border border-gray-900">
-                <h4 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-900 mb-2">
+            <div className="grid md:grid-cols-2 gap-4 my-8">
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
                   {t('latinCross')}
                 </h4>
-                <p className="text-base font-medium text-gray-700">
+                <p className="text-sm text-gray-600">
                   {t('latinCrossDesc')}
                 </p>
               </div>
-              <div className="bg-gray-100 rounded-lg p-6 border border-gray-900">
-                <h4 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-900 mb-2">
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
                   {t('concrete')}
                 </h4>
-                <p className="text-base font-medium text-gray-700">
+                <p className="text-sm text-gray-600">
                   {t('concreteDesc')}
                 </p>
               </div>
-              <div className="bg-gray-100 rounded-lg p-6 border border-gray-900">
-                <h4 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-900 mb-2">
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
                   {t('redBrick')}
                 </h4>
-                <p className="text-base font-medium text-gray-700">
+                <p className="text-sm text-gray-600">
                   {t('redBrickDesc')}
                 </p>
               </div>
-              <div className="bg-gray-100 rounded-lg p-6 border border-gray-900">
-                <h4 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-900 mb-2">
+              <div className="bg-gray-50 rounded-lg p-5 border border-gray-200">
+                <h4 className="text-base font-semibold text-gray-900 mb-2">
                   {t('tuscanStyle')}
                 </h4>
-                <p className="text-base font-medium text-gray-700">
+                <p className="text-sm text-gray-600">
                   {t('tuscanStyleDesc')}
                 </p>
               </div>
             </div>
 
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-20">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-6 mt-12">
               {t('culturalSignificance')}
             </h2>
-            <p className="text-base font-medium text-gray-700 leading-relaxed mb-6">
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
               {t('culturalSignificanceDesc1')}
             </p>
-            <p className="text-base font-medium text-gray-700 leading-relaxed">
+            <p className="text-sm text-gray-600 leading-relaxed">
               {t('culturalSignificanceDesc2')}
             </p>
           </div>
         </article>
 
         {/* Navigation */}
-        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-between">
+        <div className="mt-10 flex flex-col sm:flex-row gap-3 justify-between">
           <Link
             href="/kilise/tarih"
-            className="bg-white hover:bg-gray-50 text-gray-700 font-semibold py-3 px-6 rounded-lg shadow-md transition-colors duration-300"
+            className="bg-white hover:bg-gray-50 text-gray-700 font-medium py-2.5 px-6 rounded-lg shadow-sm transition-colors duration-300 text-sm border border-gray-200"
           >
             {t('previousPage')}
           </Link>
           <Link
             href="/kilise/ruhsal-degerlerimiz"
-            className="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-colors duration-300"
+            className="bg-gray-900 hover:bg-gray-800 text-white font-medium py-2.5 px-6 rounded-lg shadow-sm transition-colors duration-300 text-sm"
           >
             {t('nextPage')}
           </Link>

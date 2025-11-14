@@ -46,15 +46,28 @@ export default function Navigation() {
   ];
 
   // Get current locale from pathname
-  const currentLocale = pathname?.startsWith('/en') ? 'en' : 'tr';
+  const getCurrentLocale = () => {
+    if (pathname?.startsWith('/en')) return 'en';
+    if (pathname?.startsWith('/it')) return 'it';
+    return 'tr';
+  };
+  const currentLocale = getCurrentLocale();
 
   // Switch locale in URL
   const switchLocale = (newLocale: string) => {
     if (!pathname) return `/${newLocale}`;
-    const pathWithoutLocale = pathname.replace(/^\/(tr|en)/, '') || '/';
+    const pathWithoutLocale = pathname.replace(/^\/(tr|en|it)/, '') || '/';
     const newPath = `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
     return newPath;
   };
+
+  const languages = [
+    { code: 'tr', name: 'Türkçe', flag: '🇹🇷' },
+    { code: 'en', name: 'English', flag: '🇬🇧' },
+    { code: 'it', name: 'Italiano', flag: '🇮🇹' }
+  ];
+
+  const currentLanguage = languages.find(lang => lang.code === currentLocale) || languages[0];
 
   return (
     <nav className="bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm sticky top-0 z-50">
@@ -70,9 +83,10 @@ export default function Navigation() {
               className="object-contain"
               priority
             />
-            <Link href="/" className="group">
-              <div className="text-2xl font-bold text-gray-900 tracking-tight hover:text-red-800 transition-colors duration-300" style={{fontFamily: 'var(--font-inter)'}}>
-                Sent Antuan
+            <Link href="/">
+              <div className="text-2xl font-bold tracking-tight" style={{fontFamily: 'var(--font-inter)'}}>
+                <span className="text-gray-900">Sent </span>
+                <span className="text-red-900">Antuan</span>
               </div>
             </Link>
           </div>
@@ -114,28 +128,33 @@ export default function Navigation() {
               </div>
             ))}
 
-            {/* Language Switcher */}
-            <div className="flex items-center gap-1 ml-4 border-l border-gray-300 pl-4">
-              <Link
-                href={switchLocale('tr')}
-                className={`px-3 py-1.5 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                  currentLocale === 'tr'
-                    ? 'bg-red-900 text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                TR
-              </Link>
-              <Link
-                href={switchLocale('en')}
-                className={`px-3 py-1.5 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                  currentLocale === 'en'
-                    ? 'bg-red-900 text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
-              >
-                EN
-              </Link>
+            {/* Language Switcher - Dropdown */}
+            <div className="relative group ml-4 border-l border-gray-300 pl-4">
+              <button className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-red-800 transition-colors duration-300 font-semibold text-[15px]">
+                <span>{currentLanguage.flag}</span>
+                <span>{currentLanguage.code.toUpperCase()}</span>
+                <svg className="w-3 h-3 transition-transform group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute right-0 mt-2 w-40 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
+                <div className="py-2">
+                  {languages.map((lang) => (
+                    <Link
+                      key={lang.code}
+                      href={switchLocale(lang.code)}
+                      className={`flex items-center gap-3 px-4 py-2.5 transition-all duration-300 text-sm font-semibold ${
+                        currentLocale === lang.code
+                          ? 'bg-red-50 text-red-900'
+                          : 'text-gray-700 hover:bg-gray-50 hover:text-red-800'
+                      }`}
+                    >
+                      <span className="text-lg">{lang.flag}</span>
+                      <span>{lang.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -208,30 +227,38 @@ export default function Navigation() {
             ))}
 
             {/* Mobile Language Switcher */}
-            <div className="flex items-center gap-2 px-4 py-3 border-t border-gray-200 mt-2">
-              <span className="text-sm text-gray-600 font-semibold mr-2">Dil:</span>
-              <Link
-                href={switchLocale('tr')}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                  currentLocale === 'tr'
-                    ? 'bg-red-900 text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}
-                onClick={() => setIsOpen(false)}
+            <div className="border-t border-gray-200 mt-2">
+              <button
+                onClick={() => setOpenDropdown(openDropdown === 'language' ? null : 'language')}
+                className="w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors text-base font-semibold flex items-center justify-between"
               >
-                Türkçe
-              </Link>
-              <Link
-                href={switchLocale('en')}
-                className={`px-4 py-2 rounded-lg font-semibold text-sm transition-all duration-300 ${
-                  currentLocale === 'en'
-                    ? 'bg-red-900 text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}
-                onClick={() => setIsOpen(false)}
-              >
-                English
-              </Link>
+                <div className="flex items-center gap-2">
+                  <span>{currentLanguage.flag}</span>
+                  <span>{currentLanguage.name}</span>
+                </div>
+                <svg className={`w-4 h-4 transition-transform duration-300 ${openDropdown === 'language' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {openDropdown === 'language' && (
+                <div className="pl-4 bg-gray-50">
+                  {languages.map((lang) => (
+                    <Link
+                      key={lang.code}
+                      href={switchLocale(lang.code)}
+                      className={`flex items-center gap-3 px-4 py-2.5 transition-all duration-300 text-sm font-semibold ${
+                        currentLocale === lang.code
+                          ? 'bg-red-50 text-red-900'
+                          : 'text-gray-700 hover:bg-white hover:text-red-800'
+                      }`}
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <span className="text-lg">{lang.flag}</span>
+                      <span>{lang.name}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         )}

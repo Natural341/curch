@@ -22,7 +22,7 @@ export default function TarihPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[92vh] w-full overflow-hidden">
+      <section className="relative h-[70vh] md:h-[92vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/photos/StAntoine-Hero.jpg"
@@ -37,12 +37,39 @@ export default function TarihPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 text-white drop-shadow-2xl leading-tight tracking-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 md:mb-6 text-white drop-shadow-2xl leading-tight tracking-tight font-serif">
               {t('title')}
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-white mb-8 max-w-2xl leading-relaxed font-semibold tracking-wide">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white mb-6 md:mb-8 max-w-2xl leading-relaxed font-semibold tracking-wide px-4">
               {t('subtitle')}
             </p>
+
+            {/* Timeline Stats Box */}
+            <div className="backdrop-blur-lg bg-white/10 border-2 border-white/30 rounded-lg px-3 sm:px-4 md:px-6 py-3 md:py-4 shadow-xl max-w-2xl mx-auto">
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 md:gap-6 text-white">
+                <div className="flex flex-col items-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p className="text-xs sm:text-sm font-semibold mb-0.5">Founded</p>
+                  <p className="text-base sm:text-lg md:text-xl font-bold">1230</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                  <p className="text-xs sm:text-sm font-semibold mb-0.5">Basilica</p>
+                  <p className="text-base sm:text-lg md:text-xl font-bold">1932</p>
+                </div>
+                <div className="flex flex-col items-center">
+                  <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <p className="text-xs sm:text-sm font-semibold mb-0.5">Years</p>
+                  <p className="text-base sm:text-lg md:text-xl font-bold">795+</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -60,31 +87,31 @@ export default function TarihPage() {
 
         {/* Timeline - Zaman Tüneli */}
         <div className="relative">
-          {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-gray-400 via-gray-300 to-gray-400"></div>
+          {/* Vertical Line - Hidden on mobile, shown on md+ */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-gray-400 via-gray-300 to-gray-400"></div>
 
           <div className="space-y-0">
             {timelineEvents.map((event, index) => (
               <div key={event.year} className="relative">
-                {/* Timeline Dot */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-0 w-16 h-16 bg-white border-4 border-gray-900 rounded-full flex items-center justify-center z-10 shadow-lg">
-                  <span className="text-gray-900 font-bold text-sm">{event.year.split('-')[0].slice(-2)}</span>
+                {/* Timeline Dot - Full year displayed */}
+                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-0 w-20 h-20 bg-white border-4 border-gray-900 rounded-full items-center justify-center z-10 shadow-lg">
+                  <span className="text-gray-900 font-bold text-xs leading-tight text-center px-1">{event.year}</span>
                 </div>
 
-                {/* Content Card - Alternating Left/Right */}
-                <div className={`flex items-start pt-8 pb-16 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
-                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-12 text-right' : 'pl-12 text-left'}`}>
-                    <div className="inline-block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-8 border border-gray-200 group hover:-translate-y-1">
-                      <div className="text-4xl font-bold text-gray-900 mb-3">{event.year}</div>
-                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-700 transition-colors">
+                {/* Content Card - Alternating Left/Right on desktop, stacked on mobile */}
+                <div className={`flex flex-col md:flex-row items-start pt-8 pb-12 md:pb-16 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} text-left`}>
+                    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 md:p-8 border border-gray-200 group hover:-translate-y-1 w-full">
+                      <div className="text-3xl md:text-4xl font-bold text-red-900 mb-3 font-serif">{event.year}</div>
+                      <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4 group-hover:text-gray-700 transition-colors leading-snug">
                         {event.title}
                       </h3>
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed text-base">
                         {event.description}
                       </p>
                     </div>
                   </div>
-                  <div className="w-1/2"></div>
+                  <div className="hidden md:block w-1/2"></div>
                 </div>
               </div>
             ))}

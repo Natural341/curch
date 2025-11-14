@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sent Antuan Kilisesi - İstanbul Beyoğlu",
   description: "İstanbul'un en büyük Katolik kilisesi. Sent Antuan Bazilikası, ayin saatleri, dualar, cemaatlerimiz ve daha fazlası.",
+  icons: {
+    icon: '/hac.png',
+  },
 };
 
 export default function RootLayout({
