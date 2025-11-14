@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-[60vh] md:h-[75vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/photos/Sent-Antuan-Kilisesi-06.jpg"
+            src="/photos/StAntoine-Hero.jpg"
             alt="Sent Antuan Bazilikası"
             fill
             className="object-cover object-center transition-transform duration-700 ease-out"
@@ -20,6 +20,19 @@ export default function Home() {
             unoptimized
           />
         </div>
+
+        {/* Motif on the right side */}
+        <div className="absolute right-0 top-0 w-[500px] h-full pointer-events-none hidden lg:block z-10">
+          <Image
+            src="/motif.png"
+            alt="Motif"
+            fill
+            className="object-contain"
+            priority={false}
+            sizes="500px"
+          />
+        </div>
+
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
             {/* Main Title */}
@@ -73,16 +86,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <div className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200">
-              <div className="mb-4 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-200/60">
+              <div className="mb-5 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{t('cards.history.title')}</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <h3 className="text-xl font-semibold mb-3 text-[#8B1538]">{t('cards.history.title')}</h3>
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm">
                 {t('cards.history.description')}
               </p>
               <Link
@@ -90,21 +103,21 @@ export default function Home() {
                 className="text-gray-700 hover:text-gray-900 font-medium inline-flex items-center transition-colors duration-300 text-sm"
               >
                 {t('cards.history.readMore')}
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
             </div>
 
             {/* Card 2 */}
-            <div className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200">
-              <div className="mb-4 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-200/60">
+              <div className="mb-5 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{t('cards.art.title')}</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <h3 className="text-xl font-semibold mb-3 text-[#8B1538]">{t('cards.art.title')}</h3>
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm">
                 {t('cards.art.description')}
               </p>
               <Link
@@ -112,21 +125,21 @@ export default function Home() {
                 className="text-gray-700 hover:text-gray-900 font-medium inline-flex items-center transition-colors duration-300 text-sm"
               >
                 {t('cards.art.readMore')}
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
             </div>
 
             {/* Card 3 */}
-            <div className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200">
-              <div className="mb-4 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="bg-white rounded-2xl p-8 shadow-md border border-gray-200/60">
+              <div className="mb-5 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center">
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{t('cards.community.title')}</h3>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <h3 className="text-xl font-semibold mb-3 text-[#8B1538]">{t('cards.community.title')}</h3>
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm">
                 {t('cards.community.description')}
               </p>
               <Link
@@ -134,7 +147,7 @@ export default function Home() {
                 className="text-gray-700 hover:text-gray-900 font-medium inline-flex items-center transition-colors duration-300 text-sm"
               >
                 {t('cards.community.readMore')}
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -152,11 +165,11 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 md:p-10 shadow-sm border border-gray-200">
+          <div className="bg-gradient-to-br from-gray-50 to-gray-100/50 rounded-2xl p-8 md:p-10 border border-gray-200">
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-                <h3 className="text-xl font-semibold text-gray-900 mb-5 tracking-tight">{t('massTimes.weekdays.title')}</h3>
-                <ul className="space-y-3 text-gray-700">
+              <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <h3 className="text-xl font-semibold text-[#8B1538] mb-6 tracking-tight">{t('massTimes.weekdays.title')}</h3>
+                <ul className="space-y-4 text-gray-700">
                   <li className="flex items-center text-sm">
                     <span className="text-gray-400 mr-3 text-lg">•</span>
                     <span>{t('massTimes.weekdays.schedule1')}</span>
@@ -172,8 +185,8 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
-                <h3 className="text-xl font-semibold text-gray-900 mb-5 tracking-tight">{t('massTimes.weekend.title')}</h3>
+              <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100">
+                <h3 className="text-xl font-semibold text-[#8B1538] mb-6 tracking-tight">{t('massTimes.weekend.title')}</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-center text-sm">
                     <span className="text-gray-400 mr-3 text-lg">•</span>
@@ -215,25 +228,25 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Link
               href="/dua/ozel-dualar"
-              className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200"
+              className="group bg-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
-              <div className="mb-4 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-5 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center group-hover:bg-gray-100 transition-colors">
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3 text-[#8B1538]">
                 {t('prayers.special.title')}
               </h3>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm">
                 {t('prayers.special.description')}
               </p>
               <span className="text-gray-700 hover:text-gray-900 font-medium inline-flex items-center transition-colors duration-300 text-sm">
                 {t('cards.history.readMore')}
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </span>
@@ -241,22 +254,22 @@ export default function Home() {
 
             <Link
               href="/dua/donemlere-gore"
-              className="group bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200"
+              className="group bg-white rounded-2xl p-8 hover:shadow-lg transition-all duration-300 border border-gray-100"
             >
-              <div className="mb-4 w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center">
-                <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mb-5 w-12 h-12 rounded-xl bg-gray-50 flex items-center justify-center group-hover:bg-gray-100 transition-colors">
+                <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3 text-[#8B1538]">
                 {t('prayers.seasonal.title')}
               </h3>
-              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
+              <p className="text-gray-600 mb-5 leading-relaxed text-sm">
                 {t('prayers.seasonal.description')}
               </p>
               <span className="text-gray-700 hover:text-gray-900 font-medium inline-flex items-center transition-colors duration-300 text-sm">
                 {t('cards.history.readMore')}
-                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                 </svg>
               </span>
@@ -277,13 +290,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/iletisim"
-              className="bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-gray-800 shadow-md transition-all duration-300 hover:shadow-lg text-sm"
+              className="bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-white hover:text-gray-900 border-2 border-gray-900 shadow-md transition-all duration-300 text-sm"
             >
               {t('visit.contactBtn')}
             </Link>
             <Link
               href="/galeri"
-              className="bg-white text-gray-700 font-medium py-3 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-50 shadow-md transition-all duration-300 text-sm"
+              className="bg-white text-gray-700 font-medium py-3 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-900 hover:text-white hover:border-gray-900 shadow-md transition-all duration-300 text-sm"
             >
               {t('visit.galleryBtn')}
             </Link>

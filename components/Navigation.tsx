@@ -129,27 +129,26 @@ export default function Navigation() {
             ))}
 
             {/* Language Switcher - Dropdown */}
-            <div className="relative group ml-4 border-l border-gray-300 pl-4">
-              <button className="flex items-center gap-2 px-4 py-2 text-gray-800 hover:text-red-800 transition-colors duration-300 font-semibold text-[15px]">
-                <span>{currentLanguage.flag}</span>
-                <span>{currentLanguage.code.toUpperCase()}</span>
-                <svg className="w-3 h-3 transition-transform group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="relative group ml-4 border-l border-gray-200 pl-4">
+              <button className="flex items-center gap-1.5 px-3 py-2 rounded-lg hover:bg-gray-50 transition-all duration-300">
+                <span className="text-2xl">{currentLanguage.flag}</span>
+                <svg className="w-3 h-3 text-gray-600 transition-transform group-hover:rotate-180 duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              <div className="absolute right-0 mt-2 w-40 bg-white/95 backdrop-blur-md rounded-xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2">
-                <div className="py-2">
+              <div className="absolute right-0 mt-2 w-48 bg-white/98 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 overflow-hidden">
+                <div className="py-1.5">
                   {languages.map((lang) => (
                     <Link
                       key={lang.code}
                       href={switchLocale(lang.code)}
-                      className={`flex items-center gap-3 px-4 py-2.5 transition-all duration-300 text-sm font-semibold ${
+                      className={`flex items-center gap-3 px-4 py-3 transition-all duration-300 text-sm font-medium ${
                         currentLocale === lang.code
-                          ? 'bg-red-50 text-red-900'
-                          : 'text-gray-700 hover:bg-gray-50 hover:text-red-800'
+                          ? 'bg-[#8B1538] text-white'
+                          : 'text-gray-700 hover:bg-gray-50'
                       }`}
                     >
-                      <span className="text-lg">{lang.flag}</span>
+                      <span className="text-xl">{lang.flag}</span>
                       <span>{lang.name}</span>
                     </Link>
                   ))}
@@ -227,13 +226,13 @@ export default function Navigation() {
             ))}
 
             {/* Mobile Language Switcher */}
-            <div className="border-t border-gray-200 mt-2">
+            <div className="border-t border-gray-200 mt-2 pt-2">
               <button
                 onClick={() => setOpenDropdown(openDropdown === 'language' ? null : 'language')}
-                className="w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors text-base font-semibold flex items-center justify-between"
+                className="w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-50 transition-colors text-base font-medium flex items-center justify-between rounded-lg"
               >
-                <div className="flex items-center gap-2">
-                  <span>{currentLanguage.flag}</span>
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl">{currentLanguage.flag}</span>
                   <span>{currentLanguage.name}</span>
                 </div>
                 <svg className={`w-4 h-4 transition-transform duration-300 ${openDropdown === 'language' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -241,19 +240,19 @@ export default function Navigation() {
                 </svg>
               </button>
               {openDropdown === 'language' && (
-                <div className="pl-4 bg-gray-50">
+                <div className="px-2 mt-1">
                   {languages.map((lang) => (
                     <Link
                       key={lang.code}
                       href={switchLocale(lang.code)}
-                      className={`flex items-center gap-3 px-4 py-2.5 transition-all duration-300 text-sm font-semibold ${
+                      className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-300 text-sm font-medium mb-1 ${
                         currentLocale === lang.code
-                          ? 'bg-red-50 text-red-900'
-                          : 'text-gray-700 hover:bg-white hover:text-red-800'
+                          ? 'bg-[#8B1538] text-white'
+                          : 'text-gray-700 hover:bg-gray-100'
                       }`}
                       onClick={() => setIsOpen(false)}
                     >
-                      <span className="text-lg">{lang.flag}</span>
+                      <span className="text-xl">{lang.flag}</span>
                       <span>{lang.name}</span>
                     </Link>
                   ))}
