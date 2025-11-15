@@ -46,7 +46,7 @@ export default function CemaatimizPage() {
   return (
     <div className="bg-white min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[50vh] md:h-[70vh] w-full overflow-hidden">
+      <section className="relative h-[70vh] md:h-[85vh] lg:h-[90vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/photos/Sent-Antuan-Kilisesi-06.jpg"
@@ -61,36 +61,42 @@ export default function CemaatimizPage() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center items-center text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-white drop-shadow-2xl leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-3 text-white drop-shadow-2xl leading-tight">
               {t('title')}
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-white/90 mb-8 max-w-2xl leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base text-white/90 mb-4 max-w-2xl leading-relaxed">
               {t('subtitle')}
             </p>
 
-            {/* Communities Info Box */}
-            <div className="backdrop-blur-lg bg-white/10 border-2 border-white/30 rounded-xl px-8 py-6 shadow-xl max-w-3xl mx-auto">
-              <div className="grid md:grid-cols-3 gap-6 text-white">
-                <div className="flex flex-col items-center">
-                  <svg className="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Communities Info Box - Compact */}
+            <div className="backdrop-blur-lg bg-white/10 border border-white/30 rounded-lg px-4 py-3 shadow-xl">
+              <div className="flex flex-wrap justify-center gap-6 text-white">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
-                  <p className="text-sm font-semibold mb-1">{t('total')}</p>
-                  <p className="text-2xl font-bold">6</p>
+                  <div>
+                    <p className="text-xs font-semibold">{t('total')}</p>
+                    <p className="text-lg font-bold">6</p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <svg className="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                   </svg>
-                  <p className="text-sm font-semibold mb-1">{t('languages')}</p>
-                  <p className="text-2xl font-bold">3+</p>
+                  <div>
+                    <p className="text-xs font-semibold">{t('languages')}</p>
+                    <p className="text-lg font-bold">3+</p>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <svg className="w-8 h-8 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
-                  <p className="text-sm font-semibold mb-1">{t('service')}</p>
-                  <p className="text-2xl font-bold">{t('active')}</p>
+                  <div>
+                    <p className="text-xs font-semibold">{t('service')}</p>
+                    <p className="text-lg font-bold">{t('active')}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -101,7 +107,12 @@ export default function CemaatimizPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Giriş */}
         <div className="text-center mb-20">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-red-900 mb-6 tracking-tight font-serif">{t('stronger')}</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide mb-6
+                       bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                       drop-shadow-sm"
+              style={{fontFamily: 'var(--font-geist-sans)'}}>
+            {t('stronger')}
+          </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
             {t('strongerDescription')}
           </p>
@@ -173,24 +184,32 @@ export default function CemaatimizPage() {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-gray-900 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide mb-4
+                       bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                       drop-shadow-sm"
+              style={{fontFamily: 'var(--font-geist-sans)'}}>
             {t('joinUs')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-700 font-medium">
             {t('joinUsDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/iletisim"
-              className="bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-gray-800 shadow-md transition-all duration-300 hover:shadow-lg text-sm"
+              className="relative overflow-hidden bg-[#8B1538] text-white font-medium py-3 px-8 rounded-lg shadow-md text-sm
+                        before:absolute before:inset-0 before:bg-gradient-to-b before:from-black before:to-gray-900 before:-translate-y-full
+                        before:transition-transform before:duration-500 hover:before:translate-y-0 hover:shadow-lg"
             >
-              {t('contact')}
+              <span className="relative z-10">{t('contact')}</span>
             </Link>
             <Link
               href="/ayin/saatleri"
-              className="bg-white text-gray-700 font-medium py-3 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-50 shadow-md transition-all duration-300 text-sm"
+              className="relative overflow-hidden bg-transparent text-[#8B1538] font-medium py-3 px-8 rounded-lg border-2 border-[#8B1538] shadow-md text-sm
+                        before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#8B1538] before:to-[#6B0F28] before:-translate-y-full
+                        before:transition-transform before:duration-500 hover:before:translate-y-0
+                        hover:text-white transition-colors duration-500"
             >
-              {t('massTimes')}
+              <span className="relative z-10">{t('massTimes')}</span>
             </Link>
           </div>
         </div>

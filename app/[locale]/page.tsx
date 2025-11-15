@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[75vh] w-full overflow-hidden">
+      <section className="relative h-[70vh] md:h-[85vh] lg:h-[90vh] w-full overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/photos/StAntoine-Hero.jpg"
@@ -21,15 +21,16 @@ export default function Home() {
           />
         </div>
 
-        {/* Motif on the right side */}
-        <div className="absolute right-0 top-0 w-[500px] h-full pointer-events-none hidden lg:block z-10">
+        {/* Motif - Responsive Design - Background Layer */}
+        <div className="absolute right-0 bottom-0 pointer-events-none z-0
+                        w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-full">
           <Image
             src="/motif.png"
             alt="Motif"
             fill
-            className="object-contain"
+            className="object-contain object-right-bottom"
             priority={false}
-            sizes="500px"
+            sizes="(max-width: 640px) 200px, (max-width: 768px) 300px, (max-width: 1024px) 400px, 500px"
           />
         </div>
 
@@ -49,15 +50,21 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
               <Link
                 href="/ayin/saatleri"
-                className="bg-white text-gray-900 font-medium py-2.5 px-7 rounded-lg hover:bg-white/90 hover:shadow-xl transition-all duration-300 text-sm shadow-lg"
+                className="relative overflow-hidden bg-white text-gray-900 font-medium py-2.5 px-7 rounded-lg shadow-lg text-sm
+                          before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#8B1538] before:to-[#6B0F28] before:-translate-y-full
+                          before:transition-transform before:duration-500 hover:before:translate-y-0 hover:shadow-xl
+                          hover:text-white transition-colors duration-500"
               >
-                {t('hero.massTimesBtn')}
+                <span className="relative z-10">{t('hero.massTimesBtn')}</span>
               </Link>
               <Link
                 href="/kilise/tarih"
-                className="bg-transparent text-white font-medium py-2.5 px-7 rounded-lg border-2 border-white/70 hover:bg-white hover:text-gray-900 transition-all duration-300 text-sm shadow-lg"
+                className="relative overflow-hidden bg-transparent text-white font-medium py-2.5 px-7 rounded-lg border-2 border-white/70 shadow-lg text-sm
+                          before:absolute before:inset-0 before:bg-gradient-to-t before:from-white before:to-white/90 before:translate-y-full
+                          before:transition-transform before:duration-500 hover:before:translate-y-0
+                          hover:text-gray-900 transition-colors duration-500"
               >
-                {t('hero.aboutBtn')}
+                <span className="relative z-10">{t('hero.aboutBtn')}</span>
               </Link>
             </div>
 
@@ -78,10 +85,13 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide mb-4
+                         bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                         drop-shadow-sm"
+                style={{fontFamily: 'var(--font-geist-sans)'}}>
               {t('welcome.title')}
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-medium">
               {t('welcome.description')}
             </p>
           </div>
@@ -160,7 +170,10 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-3 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide
+                         bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                         drop-shadow-sm"
+                style={{fontFamily: 'var(--font-geist-sans)'}}>
               {t('massTimes.title')}
             </h2>
           </div>
@@ -207,9 +220,11 @@ export default function Home() {
             <div className="mt-8 text-center">
               <Link
                 href="/ayin/saatleri"
-                className="inline-block bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-gray-800 shadow-md transition-all duration-300 hover:shadow-lg text-sm"
+                className="relative inline-block overflow-hidden bg-[#8B1538] text-white font-medium py-3 px-8 rounded-lg shadow-md text-sm
+                          before:absolute before:inset-0 before:bg-gradient-to-b before:from-black before:to-gray-900 before:-translate-y-full
+                          before:transition-transform before:duration-500 hover:before:translate-y-0 hover:shadow-lg"
               >
-                {t('massTimes.viewAll')}
+                <span className="relative z-10">{t('massTimes.viewAll')}</span>
               </Link>
             </div>
           </div>
@@ -220,10 +235,13 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-gray-900 mb-4 tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide mb-4
+                         bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                         drop-shadow-sm"
+                style={{fontFamily: 'var(--font-geist-sans)'}}>
               {t('prayers.title')}
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-3xl mx-auto font-medium">
               {t('prayers.description')}
             </p>
           </div>
@@ -281,24 +299,33 @@ export default function Home() {
       {/* Contact CTA */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold mb-4 text-gray-900 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-[#8B1538] tracking-wide mb-4
+                       bg-gradient-to-r from-[#8B1538] via-[#A91D3A] to-[#8B1538] bg-clip-text text-transparent
+                       drop-shadow-sm"
+              style={{fontFamily: 'var(--font-geist-sans)'}}>
             {t('visit.title')}
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-600">
+          <p className="text-base sm:text-lg md:text-xl mb-10 max-w-3xl mx-auto text-gray-700 font-medium">
             {t('visit.address')}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
               href="/iletisim"
-              className="bg-gray-900 text-white font-medium py-3 px-8 rounded-lg hover:bg-white hover:text-gray-900 border-2 border-gray-900 shadow-md transition-all duration-300 text-sm"
+              className="relative overflow-hidden bg-black text-white font-medium py-3 px-8 rounded-lg border-2 border-black shadow-md text-sm
+                        before:absolute before:inset-0 before:bg-gradient-to-t before:from-white before:via-gray-100 before:to-white before:translate-y-full
+                        before:transition-transform before:duration-500 hover:before:translate-y-0
+                        hover:text-gray-900 hover:border-gray-300 transition-colors duration-500"
             >
-              {t('visit.contactBtn')}
+              <span className="relative z-10">{t('visit.contactBtn')}</span>
             </Link>
             <Link
               href="/galeri"
-              className="bg-white text-gray-700 font-medium py-3 px-8 rounded-lg border-2 border-gray-300 hover:bg-gray-900 hover:text-white hover:border-gray-900 shadow-md transition-all duration-300 text-sm"
+              className="relative overflow-hidden bg-transparent text-[#8B1538] font-medium py-3 px-8 rounded-lg border-2 border-[#8B1538] shadow-md text-sm
+                        before:absolute before:inset-0 before:bg-gradient-to-b before:from-[#8B1538] before:to-[#6B0F28] before:-translate-y-full
+                        before:transition-transform before:duration-500 hover:before:translate-y-0
+                        hover:text-white transition-colors duration-500"
             >
-              {t('visit.galleryBtn')}
+              <span className="relative z-10">{t('visit.galleryBtn')}</span>
             </Link>
           </div>
         </div>
