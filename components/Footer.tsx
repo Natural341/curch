@@ -174,6 +174,18 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex items-center gap-4">
+              <a
+                href="/old-site/index.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-gray-500 hover:text-red-500 transition-colors duration-200 flex items-center gap-1"
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Eski Site
+              </a>
+              <span className="text-gray-700">|</span>
               <Link
                 href="/iletisim"
                 className="text-xs text-gray-500 hover:text-white transition-colors duration-200"
